@@ -1,0 +1,32 @@
+/* Color Palette */
+
+$theme-colors: (
+  'purple': rgb(103, 109, 248),
+  'base-dark': rgb(28, 28, 44),
+  'base-light': rgb(242, 245, 249),
+  'yellow': rgb(255, 255, 0),
+  'sub-dark': rgb(50, 51, 61),
+  'gray': rgb(249, 249, 249),
+  'white': rgb(255, 255, 255),
+  'red': rgb(255, 56, 56),
+  'sky-blue': rgb(1, 164, 255),
+  'green': rgb(110, 182, 104),
+  'orange': rgb(255, 144, 43),
+  'dark-gray': rgb(153, 153, 153),
+  'black': rgb(0, 0, 0),
+);
+
+/* Typography */
+
+// Fonts
+
+$righteous-font-path: '../fonts';
+$righteous-font-family: 'Righteous';
+
+// Convert rem to px
+
+$base-size: 16px;
+
+@function rem($target) {
+  @return $target / $base-size * 1rem;
+}

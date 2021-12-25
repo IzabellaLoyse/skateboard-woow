@@ -1,0 +1,11 @@
+@import './theme';
+
+@font-face {
+  font-family: $righteous-font-family;
+  font-weight: 400;
+  src: url('#{$righteous-font-path}/righteous/Righteous-Regular.ttf'),
+    url('#{$righteous-font-path}/righteous/Righteous-Regular.woff')
+      format('woff'),
+    url('#{$righteous-font-path}/righteous/Righteous-Regular.woff2')
+      format('woff2');
+}

@@ -36,6 +36,19 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+
+      {
+        test: /\.(svg|png|jpe?g)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name].[hash].[ext]',
+        },
+      },
+
+      {
+        test: /\.(ttf|woff|woff2)$/i,
+        loader: 'url-loader',
+      },
     ],
   },
 };
