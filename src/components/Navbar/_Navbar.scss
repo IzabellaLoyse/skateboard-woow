@@ -1,0 +1,39 @@
+@import '../../styles/theme';
+
+.wow-navbar {
+  background-color: map-get($theme-colors, 'base-dark');
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  .wow-logo {
+    align-items: center;
+    display: flex;
+    height: rem(80px);
+    margin-left: rem(32px);
+    width: rem(150px);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.wow-menu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: calc(100% - #{rem(185px)});
+
+  a {
+    color: map-get($theme-colors, 'white');
+    font-size: rem(24px);
+    padding-left: rem(24px);
+    padding-right: rem(24px);
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: map-get($theme-colors, 'yellow');
+    }
+  }
+}
