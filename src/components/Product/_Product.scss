@@ -1,0 +1,35 @@
+@import '../../styles/theme';
+
+.wow-product {
+  width: 33.33%;
+
+  &-img {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: rem(540px);
+    justify-content: center;
+    width: 100%;
+
+    img {
+      max-width: 26%;
+      width: 26%;
+    }
+  }
+}
+
+.wow-product-footer {
+  display: block;
+  width: 100%;
+
+  h2 {
+    font-size: rem(21px);
+    margin-bottom: rem(24px);
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    margin: 0 auto;
+  }
+}

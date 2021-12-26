@@ -3,6 +3,7 @@ import h from 'hyperscript';
 import helpers from 'hyperscript-helpers';
 import Navbar from '../Navbar/index';
 import Steps from '../Steps/index';
+import ProductList from '../ProductList/index';
 import './_Layout.scss';
 
 const {
@@ -12,7 +13,10 @@ const {
 const PageLayout = section({ className: 'wow-page-layout' }, [
   header({ className: 'wow-header' }, Navbar),
   aside({ className: 'wow-sidebar-left' }),
-  main({ className: 'wow-main' }, Steps),
+  main({ className: 'wow-main' }, [
+    Steps,
+    ProductList,
+  ]),
   aside({ className: 'wow-sidebar-right' }),
 ]);
 

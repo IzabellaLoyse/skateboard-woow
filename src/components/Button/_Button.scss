@@ -5,7 +5,7 @@
   border: 2px solid map-get($theme-colors, 'base-dark');
   box-shadow: 8px 8px 0 map-get($theme-colors, 'yellow');
   color: map-get($theme-colors, 'base-dark');
-  display: inline-block;
+  display: table;
   font-family: $staatliches-font-family;
   font-size: rem(24px);
   height: rem(40px);
