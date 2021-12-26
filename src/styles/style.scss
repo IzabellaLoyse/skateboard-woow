@@ -1,4 +1,4 @@
-@import './fonts';
+@import './theme';
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Righteous', cursive;
+  font-family: $righteous-font-family;
 }
 
 img {

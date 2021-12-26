@@ -1,0 +1,78 @@
+@import '../../styles/theme';
+
+.wow-steps {
+  display: flex;
+  height: rem(122px);
+  justify-content: space-between;
+  width: calc(100% - #{rem(64px)});
+}
+
+.wow-step {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: rem(8px);
+  padding-right: rem(8px);
+  width: 33.33%;
+
+  a {
+    position: relative;
+
+    &:first-child {
+      background-color: map-get($theme-colors, 'white');
+      border-radius: 50%;
+      border: solid 2px map-get($theme-colors, 'base-dark');
+      color: map-get($theme-colors, 'base-dark');
+      display: block;
+      font-size: rem(24px);
+      height: rem(64px);
+      line-height: rem(62px);
+      margin-right: rem(16px);
+      text-align: center;
+      width: rem(64px);
+      z-index: 2;
+    }
+
+    &:last-child {
+      background-color: map-get($theme-colors, 'white');
+      color: map-get($theme-colors, 'base-dark');
+      display: block;
+      font-size: rem(18px);
+      height: rem(64px);
+      line-height: rem(62px);
+      margin-right: rem(16px);
+      padding-right: rem(8px);
+      position: relative;
+      text-transform: uppercase;
+      z-index: 2;
+
+      &:before {
+        background-color: map-get($theme-colors, 'white');
+        content: '';
+        display: block;
+        height: 100%;
+        left: -10px;
+        position: absolute;
+        width: rem(8px);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.wow-step-1,
+.wow-step-2 {
+  position: relative;
+
+  &:after {
+    border-bottom: 2px dashed map-get($theme-colors, 'base-dark');
+    content: '';
+    display: block;
+    height: rem(1px);
+    position: absolute;
+    right: -25%;
+    top: calc(50% - #{rem(2px)});
+    width: 60%;
+    z-index: 1;
+  }
+}

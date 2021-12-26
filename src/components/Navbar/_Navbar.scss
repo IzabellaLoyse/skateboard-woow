@@ -23,7 +23,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  width: calc(100% - #{rem(185px)});
+  width: calc(95% - #{rem(185px)});
 
   a {
     color: map-get($theme-colors, 'white');

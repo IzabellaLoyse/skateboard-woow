@@ -7,12 +7,20 @@
 
 .wow-header {
   grid-area: header;
+  padding: rem(40px);
 }
 
 .wow-sidebar-left {
   grid-area: sidebar-left;
+  padding: rem(40px);
 }
 
 .wow-sidebar-right {
   grid-area: sidebar-right;
+  padding: rem(40px);
+}
+
+.wow-main {
+  grid-area: main;
+  padding: rem(40px);
 }
