@@ -44,11 +44,6 @@ module.exports = {
           filename: 'images/[name].[hash].[ext]',
         },
       },
-
-      {
-        test: /\.(ttf|woff|woff2)$/i,
-        loader: 'url-loader',
-      },
     ],
   },
 };
