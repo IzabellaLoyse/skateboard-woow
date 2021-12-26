@@ -30,7 +30,7 @@
     font-size: rem(24px);
     padding-left: rem(24px);
     padding-right: rem(24px);
-    transition: all 0.2s ease-out;
+    transition: $global-transition;
 
     &:hover {
       color: map-get($theme-colors, 'yellow');

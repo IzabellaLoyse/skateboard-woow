@@ -1,0 +1,24 @@
+@import '../../styles/theme';
+
+.wow-button {
+  background-color: map-get($theme-colors, 'white');
+  border: 2px solid map-get($theme-colors, 'base-dark');
+  box-shadow: 8px 8px 0 map-get($theme-colors, 'yellow');
+  color: map-get($theme-colors, 'base-dark');
+  display: inline-block;
+  font-family: $staatliches-font-family;
+  font-size: rem(24px);
+  height: rem(40px);
+  padding-left: rem(32px);
+  padding-right: rem(32px);
+  transition: $global-transition;
+
+  &:hover {
+    background-color: map-get($theme-colors, 'yellow');
+    box-shadow: 0 0 0 map-get($theme-colors, 'yellow');
+  }
+}
+
+a.wow-button {
+  line-height: rem(36px);
+}
