@@ -15,7 +15,7 @@ const Product = (id, titleName, imgLink) => div(
       '',
       true,
       'customize-skateboard',
-      'Escolher Estilo',
+      `Escolher ${titleName}`,
     )]),
   ],
 );

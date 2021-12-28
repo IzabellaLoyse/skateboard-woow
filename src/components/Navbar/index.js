@@ -11,10 +11,20 @@ const {
 const Navbar = div({ className: 'wow-navbar' }, [
   div({ className: 'wow-logo' }, img({ src: Logo })),
   nav({ className: 'wow-menu' }, [
-    a({ href: '#' }, 'Home'),
-    a({ href: '#' }, 'Montar skate'),
-    a({ href: '#' }, 'Sobre'),
+    a({ href: '/', id: 'home' }, 'Home'),
+    a({ href: '/customize', id: 'customize' }, 'Montar skate'),
+    a({ href: '/about', id: 'about' }, 'Sobre'),
   ]),
 ]);
+const allNavLinks = Navbar.querySelectorAll('.wow-menu a');
+
+allNavLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const linkPath = link.getAttribute('href');
+
+    window.history.pushState(null, 'Title', linkPath);
+  });
+});
 
 export default Navbar;
